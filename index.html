@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="whatssap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 
@@ -66,8 +69,8 @@
             <p class="logo"><img src="MEDIA/logo-sin-fondo.png"></p><br>
             <nav>
                 <a href="#hero"><button>Inicio</button></a>
-                <a href="#quienes-somos"><button>Quienes Somos</button></a>
-                <a href="#nuestros-programas"><button>Nuestros servicios</button></button></a>
+                <a href="#quienes-somos"><button>Nosotros</button></a>
+                <a href="#nuestros-programas"><button>Servicios</button></button></a>
                 <a href="#Caracteristicas"><button>Características</button></a>
                 <a href="#contactos"><button>Contactos</button></a>
             </nav>
@@ -234,6 +237,35 @@
             document.getElementById("musica1").play();
         }
     </script>
+
+
+
+
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script>
+        const btn_scrolltop = document.getElementById("btn_scrolltop")
+        btn_scrolltop.addEventListener('click', () => {
+            window.scrollTo(0, 0)
+        })
+
+        window.onscroll = () => {
+        add_btn_scrolltop()
+        }
+
+        const add_btn_scrolltop = () => {
+        if (window.scrollY < 300) {
+            btn_scrolltop.classList.remove("btn-scrolltop-on")
+        } else {
+            btn_scrolltop.classList.add("btn-scrolltop-on")
+        }
+        }
+
+    </script>
+
+
+
 
 </body>
 </html>
