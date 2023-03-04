@@ -507,7 +507,7 @@ footer p{
 footer .container{
     height: 50px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items:center;
 }
 
