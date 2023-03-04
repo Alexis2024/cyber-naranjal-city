@@ -17,6 +17,29 @@
     z-index: 10000;
 }
 
+
+
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 16px;
+    left: 20px;
+    padding: 15px 20px;
+    background: rgb(1, 248, 244);
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+  }
+  
+  .btn-scrolltop-on {
+    transform: translateY(0);
+}
+
+
+
 #carga{
     border: 15px solid #ccc;
     border-top-color: #00ffea;
@@ -134,7 +157,7 @@ header .container{
 
 header nav{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
     padding-bottom: 25px;
 }
@@ -156,7 +179,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 40vh;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -422,7 +445,7 @@ header a:hover{
     text-align: center;
     background-color: rgb(41, 250, 239);
     color: rgb(46, 46, 46);
-    height: 80vh;
+    height: 40vh;
 
     background-color: rgba(30,30,30);
     color: rgb(255, 255, 255);
@@ -453,7 +476,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 50vh;
     color: white;
     background-image: url("MEDIA/ubicacion-actualizada.png");
     background-repeat: no-repeat;
@@ -490,6 +513,47 @@ footer .container{
 
 
 @media (min-width: 1090px){
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        color: white;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("MEDIA/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 30px;
+    }
+    #contactos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(41, 250, 239);
+        color: rgb(46, 46, 46);
+        height: 80vh;
+    
+        background-color: rgba(30,30,30);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 15px;
+        background-image: linear-gradient(135deg
+        ,#00B7D4,#4c5355,#ffffff,#00ffff,#1de6e6,#7ce7cd,#7ce7cd);
+        background-size: 500%;
+        animation: fanimado 10s infinite;
+    
+    }
+
+
     header{
         height: 185px;
         position:fixed;
